@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+}
+
+h1,
+h2,
+p {
+    margin-bottom: 0 !important;
+}
+
+ul {
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.container-main {
+    max-width: 1440px !important;
+}
+
+.ff-atinkson {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+.ff-jura {
+    font-family: "Jura", sans-serif;
+}
+
+.filter-menu {
+    max-width: 212px !important;
+}
+
+.filter-menu .accordion::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-menu .accordion {
+    --bs-accordion-bg: black !important;
+    --bs-accordion-border-color: transparent !important;
+    border: 0px solid transparent !important;
+    padding-bottom: 60px;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    max-height: 500px !important;
+}
+
+.filter-heading {
+    padding: 19px 8px 19px 0;
+}
+
+.filter-menu .accordion .accordion-item,
+.accordion-button {
+    padding-left: 8px !important;
+    padding-right: 8px;
+    color: white !important;
+}
+
+.filter-menu .accordion .accordion-button:not(.collapsed),
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.filter-menu .accordion .accordion-button {
+    padding: 11px 27px 11px 16px !important;
+    background: var(--bg-gray) !important;
+    width: 196px !important;
+    color: #808080 !important;
+}
+
+.filter-menu .accordion .accordion-button::after {
+    background-image: url("../image/drop-down-arrow.svg") !important;
+    background-size: 1rem !important;
+    background-position: center;
+}
+
+.noderock-bg {
+    background-image: url("../image/noderock-background-img.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.min-h-screen {
+    height: 100vh;
+}
+
+.login-access-btn {
+    padding: 28.5px 114px 28.5px 114px;
+}
+
+.login-access-btn h2 {
+    font-size: 40px;
+
+}
+
+.login-access-btn .login-connect-btn {
+    padding: 7.5px 27px 8.5px 26.5px;
+    border: 2px solid black;
+    margin-left: 32px;
+    transition: all 500ms;
+}
+
+.login-connect-btn:hover {
+    background: white !important;
+    color: black !important;
+    border: 2px solid black !important;
+}
+
+
+
+.connect-wallet .modal-content {
+    background: black !important;
+    top: 50px !important;
+}
+
+.connect-wallet .btn-close,
+.btn-close:focus {
+    background-image: url("../image/connect-wallet-close-btn.svg");
+    box-shadow: none;
+    transition: all 500ms;
+}
+
+.connect-wallet .modal-header {
+    border-bottom: 0 !important;
+}
+
+.connect-wallet .modal-body {
+    padding: 8px 24px 24px 24px !important;
+}
+
+.modal-connect-body {
+    padding: 31.5px 24px 31.5px 24px;
+}
+
+.connect-wallet .modal.fade .modal-dialog {
+    transform: translate(0, 0);
+}
+
+.connect-wallet .modal-body button {
+    padding: 8.5px 24.5px 8.5px 24.5px;
+    border: 2px solid var(--bg-orange);
+    transition: all 300ms;
+}
+
+.connect-wallet .modal-body button:hover {
+    border: 2px solid var(--bg-orange) !important;
+    background: transparent;
+    color: #f46a0f !important;
+}
+
+
+
+.bitcoin-counter {
+    /* padding: 2px 89.5px 2px 80.5px; */
+    max-width: 343px;
+    width: 100%;
+    padding: 2px 0 2px 0;
+}
+
+.bitcoin-counter p {
+    padding: 5px 0 5px 0;
+}
+
+.sat-counter {
+    /* padding: 11.5px 57.8px 11.5px 57.8px; */
+    max-width: 268px;
+    width: 100%;
+    padding: 12.5px 0 13.5px 0;
+}
+
+
+.sat-counter-2 {
+    max-width: 268px;
+    width: 100%;
+    padding: 12.5px 0 13.5px 0;
+}
+
+.sat-counter-3 {
+    max-width: 268px;
+    width: 100%;
+    padding: 12.5px 0 13.5px 0;
+}
+
+.next-block-nav {
+    max-width: 383px;
+    width: 100%;
+    padding: 12.5px 0 13.5px 0;
+}
+
+#nav {
+    padding: 11.5px 0 11.5px 0;
+    z-index: 2;
+}
+
+.nav-connect-btn {
+    background: transparent;
+    border: 1px solid var(--bg-orange);
+    padding: 6.5px 20px 6.5px 20px;
+    transition: all 500ms ease;
+}
+
+.nav-menu-btn {
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+.pb_1 {
+    padding-bottom: 2px;
+}
+
+
+
+#counter-nav {
+    transition: all 600ms;
+}
+
+.left_0 {
+    left: 0 !important;
+}
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+.d_none {
+    display: none;
+}
+
+.-left_100 {
+    left: -100%;
+}
+
+.mobile-nav-close-btn {
+    background: transparent;
+    border: none;
+    margin-top: 40px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+.landing-page-heading {
+    font-size: 216px;
+}
+
+.navbar li a {
+    transition: all 500ms;
+}
+
+.navbar li a:hover {
+    color: #f46a0f;
+}
+
+.nav-connect-btn:hover {
+    background: #f46a0f;
+    color: white;
+}
+
+.login-access-btn h2 {
+    margin-top: -8px;
+}
+
+
+.nav-menu-btn:hover {
+    color: #f46a0f;
+}
+
+.connect-wallet .modal-content {
+    top: 130px !important;
+}
+
+@media (max-width:768px) {
+    #nav_bar {
+        position: fixed;
+        top: 57px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        background-color: #111110cf;
+        backdrop-filter: blur(20px);
+        /* opacity: 80%; */
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all 500ms ease-in-out;
+    }
+
+    .login-access-btn .login-connect-btn {
+        margin-left: 20px;
+        /* margin-top: 20px; */
+    }
+
+    .navbar {
+        margin-top: 50px;
+    }
+
+    .navbar li a {
+        color: white;
+        font-size: 18px;
+        padding: 0px 120px 34px 120px;
+        
+
+    }
+
+    .nav-bar-links {
+        border-bottom: 1px solid white;
+        padding-bottom: 15px;
+    }
+
+    .bitcoin-counter-mobile {
+        max-width: 760px;
+        width: 100%;
+        padding: 11px 0 11px 0;
+        margin-top: 1px;
+    }
+
+    .sat-counter-mobile {
+        width: 100%;
+        max-width: 780px;
+    }
+
+    .sat-counter-mobile p {
+        font-size: 18px;
+    }
+
+    .sat-counter-2 p {
+        font-size: 18px;
+    }
+
+    .sat-counter-3 p {
+        font-size: 18px;
+    }
+
+    .next-block-nav-mobile {
+        max-width: 793px;
+        width: 100%;
+        padding: 11.5px 0 11.5px 0;
+    }
+
+    .counter-mobile-parent {
+        height: 50px;
+        margin-top: 1px;
+        margin-bottom: 2px;
+    }
+
+    .next-block-nav-mobile p {
+        font-size: 18px;
+    }
+
+    .w_100 {
+        width: 100%;
+    }
+
+    .gap-40 {
+        gap: 0px;
+    }
+    .nav-link-border{
+        border-bottom: 1px solid #808080;
+    }
+
+
+}
+
+
+@media (max-width:576px) {
+    .login-access-btn {
+        padding: 10px 30px 10px 30px;
+    }
+
+    .login-access-btn h2 {
+        font-size: 22px;
+    }
+
+    .login-access-btn .login-connect-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .modal-connect-body {
+        padding: 11.5px 20px 11.5px 20px;
+    }
+
+    .connect-wallet .modal-body button {
+        margin-top: 5px;
+        padding: 8.5px 17.5px 8.5px 17.5px;
+    }
+
+    .connect-wallet .modal-body {
+        padding: 8px 9px 8px 9px !important;
+    }
+
+    .wallet-icons {
+        width: 20px;
+        height: 20px;
+    }
+
+    .connect-wallet .modal-content {
+        top: 130px !important;
+    }
+
+    .landing-page-heading {
+        font-size: 106px;
+    }
+}

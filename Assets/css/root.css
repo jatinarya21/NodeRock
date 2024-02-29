@@ -1,0 +1,123 @@
+:root {
+    --fs-xs: 12px;
+    --fs-sm: 14px;
+    --fs-base: 18px;
+    --fs-3xl: 24px;
+    --bg-orange: #f46a0f;
+    --bg-dark-gray: #1e1e1e;
+    --bg-gray: #111110;
+    --text-green: #48A838;
+    --gap-2: 2px;
+    --light-gray: #808080;
+    --gap-40: 90px;
+
+}
+
+.gap_2 {
+    gap: 2px;
+}
+
+.my_2{
+    margin: 2px  0 2px 0 ;
+}
+
+.bg-dark-gray {
+    background-color: var(--bg-dark-gray);
+}
+
+.text_green {
+    color: var(--text-green);
+}
+
+.text-light-gray {
+    color: var(--light-gray);
+}
+
+.text_orange {
+    color: var(--bg-orange);
+}
+
+.text-sm {
+    font-size: var(--fs-sm);
+}
+
+.text-base {
+    font-size: var(--fs-base);
+}
+
+.bg_orange {
+    background: var(--bg-orange);
+}
+
+.text-3xl {
+    font-size: var(--fs-3xl);
+}
+
+
+
+
+
+
+
+@media (max-width:1440px) {
+    :root {
+        --fs-xs: 12px;
+        --fs-sm: 14px;
+        --fs-base: 16px;
+        --fs-3xl: 24px;
+        --bg-orange: #f46a0f;
+        --bg-dark-gray: #1e1e1e;
+        --bg-gray: #111110;
+        --text-green: #48A838;
+        --gap-2: 2px;
+        --light-gray: #808080;
+        --gap-40: 40px;
+
+    }
+}
+
+@media (max-width:1300px) {
+    :root {
+        --fs-xs: 12px;
+        --fs-sm: 14px;
+        --fs-base: 12px;
+        --fs-3xl: 18px;
+        --bg-orange: #f46a0f;
+        --bg-dark-gray: #1e1e1e;
+        --bg-gray: #111110;
+        --text-green: #48A838;
+        --gap-2: 2px;
+        --light-gray: #808080;
+        --gap-40: 40px;
+
+    }
+}
+
+@media (max-width:1024px) {
+    :root {
+        --fs-xs: 12px;
+        --fs-sm: 14px;
+        --fs-base: 12px;
+        --fs-3xl: 16px;
+        --bg-orange: #f46a0f;
+        --bg-dark-gray: #1e1e1e;
+        --bg-gray: #111110;
+        --text-green: #48A838;
+        --gap-2: 2px;
+        --light-gray: #808080;
+        --gap-40: 40px;
+
+    }
+}
+
+@media (max-width:576px) {
+    :root {
+        --fs-xs: 12px;
+        --fs-sm: 14px;
+        --fs-3xl: 18px;
+        --bg-orange: #f46a0f;
+        --bg-dark-gray: #1e1e1e;
+        --bg-gray: #111110;
+
+    }
+}
