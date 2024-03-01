@@ -3,6 +3,7 @@
     --fs-sm: 14px;
     --fs-base: 18px;
     --fs-3xl: 24px;
+    --fs-5xl: 32px;
     --bg-orange: #f46a0f;
     --bg-dark-gray: #1e1e1e;
     --bg-gray: #111110;
@@ -16,9 +17,14 @@
 .gap_2 {
     gap: 2px;
 }
-
+.text-5xl{
+    font-size: var(--fs-5xl);
+}
 .my_2{
     margin: 2px  0 2px 0 ;
+}
+.bg_gray{
+    background: var(--bg-gray);
 }
 
 .bg-dark-gray {

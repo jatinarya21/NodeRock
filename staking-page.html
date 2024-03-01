@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="./Assets/image/noderocks-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./Assets/image/favicon.png" type="image/x-icon">
     <title>Staking Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -54,71 +54,74 @@
         <div class="bg-black">
             <nav id="nav" class="container container-main">
                 <div class="d-flex align-items-center justify-content-between px-4">
-                    <a href="./landing-page.html" class="d-flex align-items-center gap-3 ">
+                    <a href="/" class="d-flex align-items-center gap-3 ">
                         <img width="37" height="35" src="./Assets/image/noderocks-logo.png" class="" alt="">
                         <p class="text-white ff-atinkson text-3xl fw-bolder d-none d-md-block">NODEROCKS</p>
                     </a>
-                    <div id="nav_bar" class="d-flex flex-column justify-content-start w_100 w-md-auto">
-                        <div id="counter-nav" class="bg-dark-gray w_100  d-md-none">
-                            <div class="d-flex align-items-center gap_ 2 flex-column">
-                                <div
-                                    class="bg-black gap-lg-2 d-inline-flex bitcoin-counter-mobile  align-items-center justify-content-center">
-                                    <img width="18" height="26" src="./Assets/image/bitcoin-symbol.png" alt="">
-                                    <div class="d-flex">
-                                        <p class="ff-jura text-white text-3xl ms-1 fw-bolder">69,420</p>
-                                        <span class="d-flex align-items-center gap-1">
-                                            <img src="./Assets/image/Arrow-Up.svg" alt="">
-                                            <p class="text-base text_green ff-jura text-base ">69%</p>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="d-flex w-100 justify-content-center gap_2  counter-mobile-parent">
+                    <div id="nav_bar" class="d-flex flex-column justify-content-start w_100 w-md-auto overflow-auto">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <div id="counter-nav" class="bg-dark-gray w_100  d-md-none">
+                                <div class="d-flex align-items-center gap_ 2 flex-column">
                                     <div
-                                        class="bg-black gap-xl-2 flex-column flex-lg-row d-inline-flex  sat-counter-mobile align-items-center justify-content-center">
-                                        <p class="ff-jura text-white text-base ms-xl-1 fw-bolder">16 sat/vB</p>
-                                        <p class="text-base text_orange ff-jura text-base ">$1.15</p>
+                                        class="bg-black gap-lg-2 d-inline-flex bitcoin-counter-mobile  align-items-center justify-content-center">
+                                        <img width="18" height="26" src="./Assets/image/bitcoin-symbol.png" alt="">
+                                        <div class="d-flex">
+                                            <p class="ff-jura text-white text-3xl ms-1 fw-bolder">69,420</p>
+                                            <span class="d-flex align-items-center gap-1">
+                                                <img src="./Assets/image/Arrow-Up.svg" alt="">
+                                                <p class="text-base text_green ff-jura text-base ">69%</p>
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div
-                                        class="bg-black gap-xl-2 flex-column flex-lg-row d-inline-flex sat-counter-2 align-items-center justify-content-center">
-                                        <p class="ff-jura text-white text-base ms-1 fw-bolder">17 sat/vB</p>
-                                        <p class="text-base text_orange ff-jura text-base ">$1.22</p>
+                                    <div class="d-flex w-100 justify-content-center gap_2  counter-mobile-parent">
+                                        <div
+                                            class="bg-black gap-xl-2 flex-column flex-lg-row d-inline-flex  sat-counter-mobile align-items-center justify-content-center">
+                                            <p class="ff-jura text-white text-base ms-xl-1 fw-bolder">16 sat/vB</p>
+                                            <p class="text-base text_orange ff-jura text-base ">$1.15</p>
+                                        </div>
+                                        <div
+                                            class="bg-black gap-xl-2 flex-column flex-lg-row d-inline-flex sat-counter-2 align-items-center justify-content-center">
+                                            <p class="ff-jura text-white text-base ms-1 fw-bolder">17 sat/vB</p>
+                                            <p class="text-base text_orange ff-jura text-base ">$1.22</p>
+                                        </div>
+                                        <div
+                                            class="bg-black gap-xl-2 flex-column flex-lg-row d-inline-flex sat-counter-3 align-items-center justify-content-center">
+                                            <p class="ff-jura text-white text-base ms-1 fw-bolder">18 sat/vB</p>
+                                            <p class="text-base text_orange ff-jura text-base ">$1.29</p>
+                                        </div>
                                     </div>
-                                    <div
-                                        class="bg-black gap-xl-2 flex-column flex-lg-row d-inline-flex sat-counter-3 align-items-center justify-content-center">
-                                        <p class="ff-jura text-white text-base ms-1 fw-bolder">18 sat/vB</p>
-                                        <p class="text-base text_orange ff-jura text-base ">$1.29</p>
-                                    </div>
-                                </div>
-                                <div class="w-100">
-                                    <div class="bg-black next-block-nav-mobile">
-                                        <p class="ff-jura text-base text-white text-center  fw-bolder">Next
-                                            Block
-                                            840,000
-                                            <span class="text_orange d-md-block d-inline-flex">~10
-                                                minutes</span>
-                                        </p>
+                                    <div class="w-100">
+                                        <div class="bg-black next-block-nav-mobile">
+                                            <p class="ff-jura text-base text-white text-center  fw-bolder">Next
+                                                Block
+                                                840,000
+                                                <span class="text_orange d-md-block d-inline-flex">~10
+                                                    minutes</span>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <ul class="d-flex align-items-center flex-column flex-md-row  gap-40 nav-bar">
+                                <li class=" py-5 py-md-0 nav-bar-link w-100 text-center">
+                                    <a class="text-light-gray text-base ff-jura fw-bolder  " href="">Portolio</a>
+                                </li>
+                                <li class=" py-5 py-md-0 nav-bar-link w-100 text-center">
+                                    <a class="text-light-gray text-base ff-jura fw-bolder" href="">Explorer</a>
+                                </li>
+                                <li class=" py-5 py-md-0 nav-bar-link w-100 text-center">
+                                    <a class="text-light-gray text-base ff-jura fw-bolder"
+                                        href="./staking-page.html">Staking</a>
+                                </li>
+                                <li class=" py-5 py-md-0 w-100 text-center">
+                                    <a class="text-light-gray text-base ff-jura fw-bolder " href="">Experiences</a>
+                                </li>
+                                <button type="button"
+                                    class="text_orange ff-jura fw-bolder text-base nav-connect-btn d-none d-md-block">Connect</button>
+                            </ul>
+                            <button onclick="openNav()" class="mobile-nav-close-btn d-md-none"><img
+                                    src="./Assets/image/connect-wallet-close-btn.svg" alt=""></button>
                         </div>
-                        <ul class="d-flex align-items-center flex-column flex-md-row gap-40  navbar">
-                            <li class=" pb-5 py-md-0"><a
-                                    class="text-light-gray text-base ff-jura fw-bolder nav-link-border "
-                                    href="">Portolio</a></li>
-                            <li class=" pb-5 py-md-0"><a
-                                    class="text-light-gray text-base ff-jura fw-bolder nav-link-border"
-                                    href="">Explorer</a></li>
-                            <li class=" pb-5 py-md-0"><a
-                                    class="text-light-gray text-base ff-jura fw-bolder nav-link-border"
-                                    href="">Staking</a></li>
-                            <li class=" pt-md-0"><a class="text-light-gray text-base ff-jura fw-bolder "
-                                    href="">Experiences</a>
-                            </li>
-                            <button type="button"
-                                class="text_orange ff-jura fw-bolder text-base nav-connect-btn d-none d-md-block">Connect</button>
-                        </ul>
-                        <button onclick="openNav()" class="mobile-nav-close-btn d-md-none"><img
-                                src="./Assets/image/connect-wallet-close-btn.svg" alt=""></button>
                     </div>
                     <div class="d-flex gap-4 d-md-none">
                         <button id="menu-btn" onclick="openNav()"
@@ -160,8 +163,8 @@
                                                             src="./Assets/image/wallet-leather-icon.png" alt="">
                                                         <p class="text-white ff-jura text-3xl ">Leather</p>
                                                     </span>
-                                                    <button
-                                                        class="text-white bg_orange ff-jura fw-bolder">Connect</button>
+                                                    <a href="./staking-dashboard.html"
+                                                        class="text-white bg_orange ff-jura fw-bolder">Connect</a>
                                                 </div>
                                                 <div
                                                     class="bg-dark-gray d-flex align-items-center justify-content-between modal-connect-body mt-2">
@@ -170,8 +173,8 @@
                                                             src="./Assets/image/wallet-Xverse-icon.png" alt="">
                                                         <p class="text-white ff-jura text-3xl">Xverse</p>
                                                     </span>
-                                                    <button
-                                                        class="text-white bg_orange ff-jura fw-bolder">Connect</button>
+                                                    <a href="./staking-dashboard.html"
+                                                        class="text-white bg_orange ff-jura fw-bolder">Connect</a>
                                                 </div>
                                                 <div
                                                     class="bg-dark-gray d-flex align-items-center justify-content-between  modal-connect-body mt-2">
@@ -181,8 +184,8 @@
                                                             class="wallet-icons" alt="">
                                                         <p class="text-white ff-jura text-3xl">UniSat</p>
                                                     </span>
-                                                    <button
-                                                        class="text-white bg_orange ff-jura fw-bolder">Connect</button>
+                                                    <a href="./staking-dashboard.html"
+                                                        class="text-white bg_orange ff-jura fw-bolder">Connect</a>
                                                 </div>
                                                 <div
                                                     class="bg-dark-gray d-flex align-items-center justify-content-between modal-connect-body mt-2">
@@ -192,8 +195,8 @@
                                                             class="wallet-icons" alt="">
                                                         <p class="text-white ff-jura text-3xl">OKX</p>
                                                     </span>
-                                                    <button
-                                                        class="text-white bg_orange ff-jura fw-bolder">Connect</button>
+                                                    <a href="./staking-dashboard.html"
+                                                        class="text-white bg_orange ff-jura fw-bolder">Connect</a>
                                                 </div>
                                             </div>
                                         </div>

@@ -103,15 +103,16 @@ ul {
 
 .login-access-btn .login-connect-btn {
     padding: 7.5px 27px 8.5px 26.5px;
-    border: 2px solid black;
+    border: none;
     margin-left: 32px;
     transition: all 500ms;
 }
 
 .login-connect-btn:hover {
     background: white !important;
-    color: black !important;
-    border: 2px solid black !important;
+    color: #f46a0f !important;
+    -webkit-text-stroke: 1px;
+    /* border: 2px solid black !important; */
 }
 
 
@@ -144,13 +145,13 @@ ul {
     transform: translate(0, 0);
 }
 
-.connect-wallet .modal-body button {
+.connect-wallet .modal-body a {
     padding: 8.5px 24.5px 8.5px 24.5px;
     border: 2px solid var(--bg-orange);
     transition: all 300ms;
 }
 
-.connect-wallet .modal-body button:hover {
+.connect-wallet .modal-body a:hover {
     border: 2px solid var(--bg-orange) !important;
     background: transparent;
     color: #f46a0f !important;
@@ -244,7 +245,6 @@ ul {
 .mobile-nav-close-btn {
     background: transparent;
     border: none;
-    margin-top: 40px;
 }
 
 .gap-40 {
@@ -255,11 +255,11 @@ ul {
     font-size: 216px;
 }
 
-.navbar li a {
+.nav-bar li a {
     transition: all 500ms;
 }
 
-.navbar li a:hover {
+.nav-bar li a:hover {
     color: #f46a0f;
 }
 
@@ -281,12 +281,107 @@ ul {
     top: 130px !important;
 }
 
-@media (max-width:768px) {
+.my-staking-box {
+    max-width: 390px;
+    width: 100%;
+}
+
+.my-staking-box p {
+    padding: 5px 0 5px 0;
+}
+
+.allocation-power-box {
+    max-width: 390px;
+    width: 100%;
+}
+
+.portfolio-value-box {
+    padding: 10px 0 10px 0;
+    max-width: 800px;
+    width: 100%;
+}
+
+.stake-tabs .nav-tabs {
+    border-bottom: none !important;
+}
+
+.stake-tabs .nav-tabs .nav-link {
+    color: #808080;
+    background-color: #111110 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+}
+
+.stake-tabs .nav-tabs .nav-link.active {
+    border-bottom: 1px solid #f46a0f !important;
+    background-color: black !important;
+    color: white;
+}
+
+.stake-tabs .nav-link {
+    padding: 16.5px 0 16.5px 0 !important;
+    max-width: 460px !important;
+    width: 100%;
+}
+
+.stake-tabs .nav-tabs .nav-link {
+    border-bottom: 1px solid white !important;
+}
+
+.unstaked-box {
+    padding: 23.5px;
+    background: #0D0D0E;
+    max-width: 192px;
+}
+
+.unstaked-box .stake-btn {
+    padding: 1.5px 0 1.5px 0;
+    border: 1px solid #f46a0f;
+}
+
+.unstaked-box .update-hashrate-btn {
+    padding: 1.5px 0 1.5px 0;
+    border: 1px solid #f46a0f;
+}
+
+.col {
+    padding: 0;
+}
+
+.portfolio-value-box button {
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #f46a0f;
+    font-size: 18px;
+}
+
+.stake-btn {
+    transition: all 500ms;
+}
+
+.stake-btn:hover {
+    background: white;
+    color: #f46a0f !important;
+}
+
+.update-hashrate-btn {
+    transition: all 500ms;
+}
+
+.update-hashrate-btn:hover {
+    background: #f46a0f !important;
+    color: black;
+}
+
+
+@media (max-width:767px) {
     #nav_bar {
         position: fixed;
-        top: 57px;
+        z-index: 5;
+        top: 58px;
         left: -100%;
-        height: 100vh;
+        height: calc(100vh - 58px);
         width: 100%;
         background-color: #111110cf;
         backdrop-filter: blur(20px);
@@ -302,21 +397,14 @@ ul {
         /* margin-top: 20px; */
     }
 
-    .navbar {
-        margin-top: 50px;
-    }
 
-    .navbar li a {
+
+    .nav-bar li a {
         color: white;
         font-size: 18px;
-        padding: 0px 120px 34px 120px;
-        
+        /* padding: 0px 120px 34px 120px; */
 
-    }
 
-    .nav-bar-links {
-        border-bottom: 1px solid white;
-        padding-bottom: 15px;
     }
 
     .bitcoin-counter-mobile {
@@ -366,8 +454,23 @@ ul {
     .gap-40 {
         gap: 0px;
     }
-    .nav-link-border{
+
+    .nav-bar-link {
         border-bottom: 1px solid #808080;
+        padding: 0 120px 0 120px;
+    }
+
+    .mobile-nav-close-btn {
+        margin-bottom: 34px;
+    }
+
+    .allocation-power-box p {
+        font-size: 18px;
+    }
+
+    .my-staking-box p {
+        font-size: 18px;
+        padding-bottom: 8px;
     }
 
 
@@ -394,7 +497,7 @@ ul {
 
     .connect-wallet .modal-body button {
         margin-top: 5px;
-        padding: 8.5px 17.5px 8.5px 17.5px;
+        padding: 5.5px 12.5px 5.5px 12.5px;
     }
 
     .connect-wallet .modal-body {
@@ -412,5 +515,9 @@ ul {
 
     .landing-page-heading {
         font-size: 106px;
+    }
+
+    .portfolio-value-box {
+        padding: 19.5px 0 19.5px 0;
     }
 }

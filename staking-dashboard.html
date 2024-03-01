@@ -1,0 +1,1182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Staking Dashboard</title>
+    <link rel="shortcut icon" href="./Assets/image/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/css/root.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="min-h-screen bg_gray d-flex flex-column">
+        <div class="bg-dark-gray d-none d-md-block pb_1 ">
+            <div class="d-flex align-items-center justify-content-center gap_2">
+                <div
+                    class="bg-black gap-lg-2 d-inline-flex bitcoin-counter flex-column flex-lg-row align-items-center justify-content-center">
+                    <img width="18" height="26" src="./Assets/image/bitcoin-symbol.png" alt="">
+                    <div class="d-flex">
+                        <p class="ff-jura text-white text-3xl ms-1 fw-bolder">69,420</p>
+                        <span class="d-flex align-items-center gap-1">
+                            <img src="./Assets/image/Arrow-Up.svg" alt="">
+                            <p class="text-base text_green ff-jura text-base ">69%</p>
+                        </span>
+                    </div>
+                </div>
+                <div
+                    class="bg-black gap-xl-2 flex-column flex-lg-row d-inline-flex  sat-counter align-items-center justify-content-center">
+                    <p class="ff-jura text-white text-base ms-xl-1 fw-bolder">16 sat/vB</p>
+                    <p class="text-base text_orange ff-jura text-base ">$1.15</p>
+                </div>
+                <div
+                    class="bg-black gap-xl-2 flex-column flex-lg-row d-inline-flex sat-counter-2 align-items-center justify-content-center">
+                    <p class="ff-jura text-white text-base ms-1 fw-bolder">17 sat/vB</p>
+                    <p class="text-base text_orange ff-jura text-base ">$1.22</p>
+                </div>
+                <div
+                    class="bg-black gap-xl-2 flex-column flex-lg-row d-inline-flex sat-counter-3 align-items-center justify-content-center">
+                    <p class="ff-jura text-white text-base ms-1 fw-bolder">18 sat/vB</p>
+                    <p class="text-base text_orange ff-jura text-base ">$1.29</p>
+                </div>
+                <div class="bg-black next-block-nav">
+                    <p class="ff-jura text-base text-white text-center text-xl-normal fw-bolder">Next Block 840,000
+                        <span class="text_orange d-block d-lg-inline-flex">~10
+                            minutes</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Nav bar -->
+        <div class="bg-black">
+            <nav id="nav" class="container container-main">
+                <div class="d-flex align-items-center justify-content-between px-4">
+                    <a href="/" class="d-flex align-items-center gap-3 ">
+                        <img width="37" height="35" src="./Assets/image/noderocks-logo.png" class="" alt="">
+                        <p class="text-white ff-atinkson text-3xl fw-bolder d-none d-md-block">NODEROCKS</p>
+                    </a>
+                    <div id="nav_bar" class="d-flex flex-column justify-content-start w_100 w-md-auto overflow-auto">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <div id="counter-nav" class="bg-dark-gray w_100  d-md-none">
+                                <div class="d-flex align-items-center gap_ 2 flex-column">
+                                    <div
+                                        class="bg-black gap-lg-2 d-inline-flex bitcoin-counter-mobile  align-items-center justify-content-center">
+                                        <img width="18" height="26" src="./Assets/image/bitcoin-symbol.png" alt="">
+                                        <div class="d-flex">
+                                            <p class="ff-jura text-white text-3xl ms-1 fw-bolder">69,420</p>
+                                            <span class="d-flex align-items-center gap-1">
+                                                <img src="./Assets/image/Arrow-Up.svg" alt="">
+                                                <p class="text-base text_green ff-jura text-base ">69%</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex w-100 justify-content-center gap_2  counter-mobile-parent">
+                                        <div
+                                            class="bg-black gap-xl-2 flex-column flex-lg-row d-inline-flex  sat-counter-mobile align-items-center justify-content-center">
+                                            <p class="ff-jura text-white text-base ms-xl-1 fw-bolder">16 sat/vB</p>
+                                            <p class="text-base text_orange ff-jura text-base ">$1.15</p>
+                                        </div>
+                                        <div
+                                            class="bg-black gap-xl-2 flex-column flex-lg-row d-inline-flex sat-counter-2 align-items-center justify-content-center">
+                                            <p class="ff-jura text-white text-base ms-1 fw-bolder">17 sat/vB</p>
+                                            <p class="text-base text_orange ff-jura text-base ">$1.22</p>
+                                        </div>
+                                        <div
+                                            class="bg-black gap-xl-2 flex-column flex-lg-row d-inline-flex sat-counter-3 align-items-center justify-content-center">
+                                            <p class="ff-jura text-white text-base ms-1 fw-bolder">18 sat/vB</p>
+                                            <p class="text-base text_orange ff-jura text-base ">$1.29</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-100">
+                                        <div class="bg-black next-block-nav-mobile">
+                                            <p class="ff-jura text-base text-white text-center  fw-bolder">Next
+                                                Block
+                                                840,000
+                                                <span class="text_orange d-md-block d-inline-flex">~10
+                                                    minutes</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="d-flex align-items-center flex-column flex-md-row  gap-40 nav-bar">
+                                <li class=" py-5 py-md-0 nav-bar-link w-100 text-center">
+                                    <a class="text-light-gray text-base ff-jura fw-bolder  " href="">Portolio</a>
+                                </li>
+                                <li class=" py-5 py-md-0 nav-bar-link w-100 text-center">
+                                    <a class="text-light-gray text-base ff-jura fw-bolder" href="">Explorer</a>
+                                </li>
+                                <li class=" py-5 py-md-0 nav-bar-link w-100 text-center">
+                                    <a class="text-light-gray text-base ff-jura fw-bolder"
+                                        href="./staking-page.html">Staking</a>
+                                </li>
+                                <li class=" py-5 py-md-0 w-100 text-center">
+                                    <a class="text-light-gray text-base ff-jura fw-bolder " href="">Experiences</a>
+                                </li>
+                                <button type="button"
+                                    class="text_orange ff-jura fw-bolder text-base nav-connect-btn d-none d-md-block">Connect</button>
+                            </ul>
+                            <button onclick="openNav()" class="mobile-nav-close-btn d-md-none"><img
+                                    src="./Assets/image/connect-wallet-close-btn.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-4 d-md-none">
+                        <button id="menu-btn" onclick="openNav()"
+                            class="ff-jura text-light-gray nav-menu-btn">Menu</button>
+                        <button type="button"
+                            class="text_orange ff-jura fw-bolder text-base nav-connect-btn z-1 ">Connect</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Airdrop , my stake , portfolio  value -->
+        <div class="container container-main d-none  d-md-block">
+            <!-- airdrop -->
+            <div class="bg-black d-flex align-items-center justify-content-center mt-3 py-3 gap-2 d-none d-lg-flex">
+                <img width="22" height="29" src="./Assets/image/Airdrop-icon.png" alt="">
+                <p class="ff-jura text-5xl fw-bolder text-white">Airdrop in</p>
+                <p class="text_orange text-5xl  ff-jura fw-bolder">04:20:69</p>
+            </div>
+            <!-- staking , power, value -->
+            <div class="mt-2 d-flex flex-wrap flex-lg-nowrap justify-content-center  gap-2">
+                <!-- my staking -->
+                <div class="d-flex w-100 gap-3 ">
+                    <div class="bg-black d-flex align-items-center gap-3 justify-content-center my-staking-box">
+                        <p class="text-base ff-jura fw-bolder text-white">My Staking</p>
+                        <p class="fw-bolder text-5xl text-white ff-jura"><span class="text_orange">69</span>/420</p>
+                    </div>
+                    <!-- allocation power -->
+                    <div class="bg-black d-flex align-items-center gap-2 justify-content-center allocation-power-box">
+                        <p class="text-white ff-jura text-base fw-bolder">Allocation Power</p>
+                        <img src="./Assets/image/Allocation-power.png" width="89" height="50" class="py-1" alt="">
+                    </div>
+                </div>
+                <!-- portfolio value -->
+                <div class="bg-black d-flex align-items-center justify-content-center portfolio-value-box">
+                    <p class="text-base ff-jura text-white fw-bolder">Portfolio Value</p>
+                    <p class="text-5xl text-white ff-jura fw-bolder ">69.420 BTC <span
+                            class="text_orange">($420,000.69)</span></p>
+                </div>
+            </div>
+        </div>
+        <!-- Tabs stake , unstake -->
+        <div class="bg_gray">
+            <div class="container  container-main">
+                <div class="stake-tabs mt-3">
+                    <nav class="">
+                        <div class="nav nav-tabs flex-nowrap   gap-1" id="nav-tab" role="tablist">
+                            <button class="nav-link active ff-jura text-base fw-bolder flex-nowrap flex-md-wrap "
+                                id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+                                role="tab" aria-controls="nav-home" aria-selected="true">All (100)</button>
+                            <button class="nav-link ff-jura text-base fw-bolder " id="nav-profile-tab"
+                                data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab"
+                                aria-controls="nav-profile" aria-selected="false">Staked
+                                (75)</button>
+                            <button class="nav-link ff-jura text-base fw-bolder " id="nav-contact-tab"
+                                data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
+                                aria-controls="nav-contact" aria-selected="false">Unstaked
+                                (25)</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content bg_gray" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <!-- unstaked -->
+                            <div class="container  container-main text-center mt-5">
+                                <div class="row  row-cols-7  gap-2">
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img1.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img1.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img2.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img2.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img3.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img3.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img4.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img4.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img5.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img5.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img6.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img6.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img7.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img1.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/staked-img2.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img7.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/staked-img3.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/unstake-img3.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img6.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img4.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img8.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="container  container-main text-center mt-5">
+                                <div class="row row-cols-7 gap-2">
+
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img1.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img2.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img3.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img4.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img5.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img6.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img1.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img7.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/unstake-img3.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img4.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img1.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img2.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img3.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img4.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img5.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img6.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img1.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img7.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/unstake-img3.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img4.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- staked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <div class="position-relative">
+                                                <img width="146" height="146" src="./Assets/image/staked-img1.png"
+                                                    alt="">
+                                                <p
+                                                    class="bg-black text-white ff-jura  text-base fw-bolder position-absolute top-0 end-0 px-1">
+                                                    STAKED</p>
+                                            </div>
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="container  container-main text-center mt-5">
+                                <div class="row row-cols-7 gap-2">
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img1.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img2.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img3.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img4.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img5.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img6.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img7.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/staked-img2.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/staked-img3.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img6.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img8.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img1.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img2.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img3.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img4.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img5.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img6.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img7.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/staked-img2.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/staked-img3.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+                                    <!-- unstaked -->
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-center unstaked-box">
+                                            <img width="146" height="146" src="./Assets/image/unstake-img6.png" alt="">
+                                            <button
+                                                class="bg_orange text-white ff-jura text-xs fw-bolder w-100 stake-btn mt-2">Stake</button>
+                                            <button
+                                                class=" text_orange bg-transparent ff-jura text-xs fw-bolder w-100 update-hashrate-btn mt-2">Update
+                                                Hashrate</button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- staking , power, value -->
+                    <div class="mt-2 d-flex flex-wrap justify-content-center d-block d-md-none gap-2">
+                        <!-- my staking -->
+                        <div class="d-flex w-100 gap-3 ">
+                            <div
+                                class="bg-black d-flex flex-column-reverse align-items-center gap-3 justify-content-center my-staking-box">
+                                <p class="text-base ff-jura fw-bolder text-white">My Staking</p>
+                                <p class="fw-bolder text-5xl text-white ff-jura"><span class="text_orange">75</span>/100
+                                </p>
+                            </div>
+                            <!-- allocation power -->
+                            <div
+                                class="bg-black d-flex align-items-center flex-column-reverse gap-2 justify-content-center allocation-power-box">
+                                <p class="text-white ff-jura text-base fw-bolder">Allocation Power</p>
+                                <img src="./Assets/image/mobile-allocation-bar.png" width="89" height="50" class="py-1"
+                                    alt="">
+                            </div>
+                        </div>
+                        <!-- portfolio value -->
+                        <div
+                            class="bg-black d-flex align-items-center justify-content-center gap-3 portfolio-value-box">
+                            <p class="text-5xl ff-jura text-white fw-bolder">12,345,355</p>
+                            <button class="bg_orange text-white ff-jura ">Clain Rewards</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        function openNav() {
+            const NavBar = document.getElementById("nav_bar")
+            document.body.classList.toggle("overflow_hidden");
+            const menuBtn = document.getElementById("menu-btn");
+            const CounterNav = document.getElementById("counter-nav");
+            CounterNav.classList.toggle("left_0")
+            if (NavBar.classList.toggle("left_0")) {
+                menuBtn.innerText = "Close Menu";
+            }
+            else {
+                menuBtn.innerText = "Menu";
+            }
+        }
+    </script>
+</body>
+
+</html>
